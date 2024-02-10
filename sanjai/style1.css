@@ -1,0 +1,40 @@
+ /* Basic styling */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  .gallery {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  .gallery-item:hover img {
+    transform: scale(1.2);
+    
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    color: aliceblue;
+  }
